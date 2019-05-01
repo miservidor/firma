@@ -1,0 +1,17 @@
+
+<ng-signature-pad
+  doneButtonText="Save (& show)"
+  format="base64"
+  (done)="showImage($event)"
+  width="400"
+  height="150"
+  >
+</ng-signature-pad>
+
+
+<img [src]="signatureImage" *ngIf="signatureImage" >
+
+Test{{point}}
+{{signatureImage}}
+
+<button (click)="loadImage()">Load</button>
